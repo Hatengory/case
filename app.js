@@ -134,7 +134,7 @@ let getGun = () => {
         golds.innerHTML = goldItem;
         let rngTwo = Math.floor(Math.random() * 1000 + 55);
         addMoney.innerHTML = rngTwo;
-        alert('kniiife')
+        alert('Кто-то из вас выбил НООООЖ, ну и пердун ты')
     }
 };
 
@@ -151,7 +151,7 @@ let countmoney = () => {
 let alerttt = () => {
     if (clicks < price) {
         document.querySelector('.btn').disabled = true;
-        alert('Денег нет дурачок')
+        alert('Денег нет дурачок, куда нажимаешь???')
     }
 };
 
