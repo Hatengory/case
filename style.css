@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Righteous";
+}
+
+body {
+  background-color: seashell;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 20px;
+}
+
+.btns {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  border-radius: 2rem;
+  border: 2px solid black;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+}
+
+.score {
+  height: 200px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+img {
+  width: 250px;
+  border-radius: 2rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  font-family: "Righteous";
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.case1 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  border-radius: 2rem;
+  width: 250px;
+}
+
+.case1inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.case1:hover .case1inner {
+  transform: rotateY(180deg);
+}
+
+.case1front,
+.case1back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.case1front {
+  background-color: seashell;
+  color: black;
+}
+
+.case1back {
+  background-color: seashell;
+  color: black;
+  transform: rotateY(180deg);
+  font-family: "Righteous";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  box-shadow: 5px 5px black;
+}
+
+.blue {
+  color: #183ff1;
+}
+
+.purple {
+  color: #d326b3;
+}
+
+.pink {
+  color: #d326b3;
+}
+
+.red {
+  color: #de4646;
+}
+
+.gold {
+  color: #f5cb04;
+}
+
+.black {
+  color: black;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  background-color: black;
+  color: seashell;
+  border: none;
+  border-radius: 2rem;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.reset {
+  position: relative;
+  top: 20px;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reset:active {
+  text-decoration: none;
+}
