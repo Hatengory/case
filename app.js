@@ -24,7 +24,7 @@ let addMoneys = 0;
 
 
 let getGun = () => {
-    let rng = 977;
+    let rng = 997;
     if (rng <=900) {
         item.innerHTML = 'AK-47 | Elite Build';
         item.classList.add('blue');
