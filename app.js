@@ -134,7 +134,7 @@ let getGun = () => {
         golds.innerHTML = goldItem;
         let rngTwo = Math.floor(Math.random() * 1000 + 55);
         addMoney.innerHTML = rngTwo;
-        alert('Кто-то из вас выбил НООООЖ, ну и пердун ты')
+        alert('Тимур Пидор')
     }
 };
 
