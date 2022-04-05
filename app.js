@@ -24,7 +24,7 @@ let addMoneys = 0;
 
 
 let getGun = () => {
-    let rng = 997;
+    let rng = (Math.floor(Math.random()* 1000);
     if (rng <=900) {
         item.innerHTML = 'AK-47 | Elite Build';
         item.classList.add('blue');
@@ -134,7 +134,7 @@ let getGun = () => {
         golds.innerHTML = goldItem;
         let rngTwo = Math.floor(Math.random() * 1000 + 55);
         addMoney.innerHTML = rngTwo;
-        alert('Тимур Пидор')
+        alert('ого, а ты везучий')
     }
 };
 
